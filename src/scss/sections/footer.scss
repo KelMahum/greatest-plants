@@ -1,20 +1,8 @@
 .footer{
     background-color: #F7FFEC;
-    position: relative;
     overflow: hidden;
-    &:after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 50%;
-        top: 15%;
-        right: -15%;
-        height: 100%;
-        background: url('../img/footer/footer-picture.png') no-repeat;
-        @media (max-width: 1200px){
-            display: none;
-        }
-    }
+    background: url('@img/footer/footer-pic.png') bottom right no-repeat;
+
     &__blocks{
         display: flex;
         flex-flow: row wrap;
