@@ -1,0 +1,28 @@
+.lungs{
+    &__blocks{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    &__left{
+        flex-basis: 54%;
+        @media (max-width: 767px){
+            flex-basis: 100%;
+            margin-bottom: 80px;
+            @include adaptiveValue('margin-bottom', 80, 40, 767, 1);
+        }
+    }
+    &__right{
+        flex-basis: 40%;
+        @media (max-width: 767px){
+            flex-basis: 100%;
+        }
+    }
+    &__subtitle{
+        margin: 40px 0 30px 0;
+        @media(max-width: 767px){
+            text-align: center;
+        }
+    }
+}
+
