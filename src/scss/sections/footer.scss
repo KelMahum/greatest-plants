@@ -27,6 +27,10 @@
         text-transform: uppercase;
         color: #000A01;
         opacity: 0.6;
+        &:hover{
+            color: #418A1C;
+            opacity: 0.9;
+        }
         }
     }
     .link-large{
@@ -46,7 +50,11 @@
             background-color: #000A01;
             border-radius: 50%;
             margin-right: 15px;
+            transition: all 0.2s;
             @include adaptiveValue('margin-right', 15, 7.5, 500, 320, 1);
+            &:hover{
+                opacity: 0.8;
+            }
             &:last-child{
                 margin-right: 0;
             }

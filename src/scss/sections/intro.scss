@@ -31,7 +31,7 @@
         align-self: flex-end;
         padding: 160px 15px 15px 75px;
         @include adaptiveValue('padding-left', 75, 10, 1400, 1100, 1);
-        @include adaptiveValue('padding-top', 75, 10, 1400, 1100, 1);
+        @include adaptiveValue('padding-top', 160, 10, 1400, 1100, 1);
         @media(max-width:1400px){
             align-self: flex-start;
         }

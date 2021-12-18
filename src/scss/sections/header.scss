@@ -122,10 +122,14 @@
     color: white;
     line-height: 130%; 
     &__btn{
+        transition: all 0.1s;
         padding: 20px 30px;
         box-shadow: 8px 8px 0px #51C815;
         font-weight: 700;
         background-color: $mainColor;
+        &:hover{
+            opacity: 0.85;
+        }
     }
     &__header{
         @media(max-width: 1400px){
