@@ -18,8 +18,11 @@
             flex-basis: 100%;
         }
     }
+    &__link:first-child{
+        margin-bottom: 30px;
+    }
     &__subtitle{
-        margin: 40px 0 30px 0;
+        margin-bottom: 30px;
         @media(max-width: 767px){
             text-align: center;
         }

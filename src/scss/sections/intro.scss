@@ -1,5 +1,7 @@
 .intro{
     &__blocks{
+        max-width: 1920px;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -8,11 +10,9 @@
         }
     }
     &__bg{
-        // flex-basis: 46%;
-        flex-basis: 880px;
+        flex: 1 1 46%;
         background-color: #F7FFEC;
         text-align: center;
-        @include adaptiveValue('flex-basis', 880, 780, 1100, 950, 1);
        &>img{
            max-width: 100%;
        }
@@ -25,15 +25,22 @@
         
     }
     &__content{
-        // flex-basis: 54%;
-        flex-basis: 1040px;
-        padding: 15px;
+        flex-basis: 54%;
+        flex-grow: 1;
+        // flex-basis: 1040px;
         align-self: flex-end;
-        margin-left: 75px;
-        @include adaptiveValue('margin-left', 75, 10, 1200, 1100, 1);
-        @include adaptiveValue('flex-basis', 1040, 1140, 1100, 950, 1);
+        padding: 160px 15px 15px 75px;
+        @include adaptiveValue('padding-left', 75, 10, 1400, 1100, 1);
+        @include adaptiveValue('padding-top', 75, 10, 1400, 1100, 1);
+        @media(max-width:1400px){
+            align-self: flex-start;
+        }
     }
     &__title{
+        &>span{
+            display: block;
+        }
+        max-width: 715px;
         font-size: 60px;
         font-weight: 800;
         line-height: 130%;
@@ -68,11 +75,10 @@
     .count{
         display: flex;
         &>div{
-            display: flex;
-            flex-direction: column;
-        }
-        &__collection{
-            margin-right: 102px;
+            max-width: 175px;
+            &:not(:last-child){
+                margin-right: 102px;
+            }
         }
         &__num{
             font-size: 43px;
